@@ -820,9 +820,9 @@ def box(x, y, width, minimum): # given the bars center coordinates and height, i
 
 def update_size(size_old, size_new): # it resize an image to the desired size, maintaining or not its size ratio and adding or not a pixel averaging factor with resample = True
     size_old = [size_old[0], size_old[1] / 2]
-    ratio_old = size_old[1] / size_old[0]
+    #ratio_old = size_old[1] / size_old[0]
     size_new = replace(size_new, size_old)
-    ratio_new = size_new[1] / size_new[0]
+    #ratio_new = size_new[1] / size_new[0]
     #ratio_new = size_new[1] / size_new[0]
     size_new = [1 if el == 0 else el for el in size_new]
     return [int(size_new[0]), int(size_new[1])]
